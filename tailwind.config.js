@@ -3,7 +3,9 @@ module.exports = {
   content: ["./dist/*.{html,js,css}"],
   darkMode : 'class',
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 }
