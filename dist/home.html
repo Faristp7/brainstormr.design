@@ -13,16 +13,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-slate-50 dark:bg-slate-800 font-sans">
+<body class="bg-slate-50 dark:bg-slate-800 font-sans" style="height: 4000px;">
     <div class="flex flex-col md:flex-row min-h-screen">
         <div class="order-last md:order-first w-full md:w-1/6 border-r-2 dark:border-gray-500 relative">
             <div class="flex flex-row md:flex-col h-full justify-between mx-6 md:mx-5 py-36">
+                <div class="absolute top-6">
+                    <h1 class="dark:text-white font-bold lg:text-4xl hidden lg:inline ">brainstormr</h1>
+                    <img src="img/logo.ico" alt="" srcset="" class="w-28 dark:invert hidden md:inline lg:hidden">
+                </div>
                 <div>
                     <div
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-house fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:inline dark:text-white font-semibold">Home</span>
+                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Home</span>
                         </div>
                     </div>
                 </div>
@@ -31,7 +35,7 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-magnifying-glass fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:inline dark:text-white font-semibold">Search</span>
+                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Search</span>
                         </div>
                     </div>
                 </div>
@@ -40,7 +44,7 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-pen-to-square fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:inline dark:text-white font-semibold">Create</span>
+                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Create</span>
                         </div>
                     </div>
                 </div>
@@ -49,7 +53,7 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-people-group fa-lg dark:text-white"></i>
-                            <span class="ml-3 hidden md:inline dark:text-white font-semibold">Rooms</span>
+                            <span class="ml-3 hidden md:hidden lg:inline dark:text-white font-semibold">Rooms</span>
                         </div>
                     </div>
                 </div>
@@ -58,7 +62,7 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-paper-plane fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:inline dark:text-white font-semibold">Message</span>
+                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Message</span>
                         </div>
                     </div>
                 </div>
@@ -67,7 +71,7 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-user fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:inline dark:text-white font-semibold">Profile</span>
+                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Profile</span>
                         </div>
                     </div>
                 </div>
@@ -76,33 +80,30 @@
                     <div class="flex items-center md:p-3">
                         <i class="moon fa-solid fa-moon fa-lg dark:text-white"></i>
                         <i class="sun fa-solid fa-sun fa-lg dark:text-white"></i>
-                        <span class="ml-4 dark:text-white font-semibold">Theme</span>
+                        <span class="ml-4 md:hidden lg:inline dark:text-white font-semibold">Theme</span>
                     </div>
                 </div>
                 <div
                     class="hidden md:block rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                     <div class="flex items-center md:p-3">
                         <i class="fa-solid fa-right-from-bracket fa-lg dark:text-white"></i>
-                        <a href="./index.html"><span class="ml-4 hidden md:inline dark:text-white font-semibold">Log
+                        <a href="./index.html"><span
+                                class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Log
                                 out</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center absolute top-10 left-7 hidden md:block">
-            <h1 class="dark:text-white font-bold text-4xl font-">brainstormr</h1>
-        </div>
         <!-- div2 -->
         <div class="font-Roboto w-full md:w-1/2 border-r-2 dark:border-gray-500 mt-6 ml-5">
-            <div class="flex">
+            <div class="flex gap-3">
                 <div class="relative inline-block text-left">
                     <div>
                         <button type="button"
                             class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-slate-700 dark:text-white"
                             id="menu-button" aria-expanded="true" aria-haspopup="true">
                             Sort
-                            <svg class="-mr-1 h-5 w-5 " viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
+                            <svg class="-mr-1 h-5 w-5 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                                     clip-rule="evenodd" />
@@ -113,21 +114,46 @@
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
                         id="dropdown-menu">
                         <div class="py-1" role="none">
-                            <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-0">Today</a>
-                            <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-1">This week</a>
-                            <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                                id="menu-item-2">This Month</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-600"
+                                role="menuitem" tabindex="-1" id="menu-item-0">Today</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-600"
+                                role="menuitem" tabindex="-1" id="menu-item-1">This week</a>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-600"
+                                role="menuitem" tabindex="-1" id="menu-item-2">This Month</a>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h1>Top Rated</h1>
+                    <div>
+                        <button type="button"
+                            class="active:bg-gray-200 transition duration-300 ease-in-out dark:active:bg-gray-600 inline-flex w-full rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-slate-700 dark:text-white"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Top Rated
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <button type="button"
+                            class="active:bg-gray-200 transition duration-300 ease-in-out dark:active:bg-gray-600 inline-flex w-full rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-slate-700 dark:text-white"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Your Likes
+                        </button>
+                    </div>
                 </div>
                 <div>
-                    <h1>Top Rated</h1>
+                    <div>
+                        <button type="button"
+                            class="active:bg-gray-200 transition duration-300 ease-in-out dark:active:bg-gray-600 inline-flex w-full  rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-slate-700 dark:text-white"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Most liked
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

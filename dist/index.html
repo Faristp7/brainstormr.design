@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="../src/input.css">
     <link rel="icon" href="img/favicon.ico">
+    <script src="https://unpkg.com/split-type"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,8 +25,8 @@
         <div class="flex flex-col justify-center md:min-h-screen relative">
             <div class="text-center ">
                 <img class="invert-0 dark:invert object-cover" src="img/logo.png" alt="Logo">
-                <h1 class="sm:text-5xl md:text-3xl font-semibold  dark:text-white">Welcome to <br> <span
-                        class="font-bold sm:text-6xl text-4xl">Brainstormr</span></h1>
+                <h1 class="sm:text-5xl md:text-3xl font-semibold  dark:text-white" style="clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);">Welcome to <br> <span
+                        class="logoText font-bold sm:text-6xl text-4xl">Brainstormr</span></h1>
                 <h4 class="text-1xl dark:text-white mt-1">- Unleash Your Creative Potential -</h4>
             </div>
         </div>
@@ -41,13 +43,16 @@
                             class="shadow appearance-none border rounded py-2 px-6 text-gray-700 leading-tight focus: outline-none focus:shadow-outline"
                             placeholder="Password">
                         <p class="dark:text-white cursor-pointer mt-5">Forgot Password ?</p>
-                        <button class="bg-black dark:bg-blue-500 dark:hover:bg-blue-700 text-white font-bold py-2 rounded-full"><a href="./home.html">Login</a> </button>
+                        <button
+                            class="bg-black dark:bg-blue-500 dark:hover:bg-blue-700 text-white font-bold py-2 rounded-full"><a
+                                href="./home.html">Login</a> </button>
                         <a href="" class="mt-3"><i class="fa-brands fa-google fa-xl dark:text-white"></i></a>
                     </div>
                 </div>
             </div>
             <div class="dark:text-white sm:mt-7" id="signinId-section">
-                <p class="flex justify-center">New to Brainstormr ? <span class="text-blue-400 cursor-pointer ms-2" onclick="showSignup()">
+                <p class="flex justify-center">New to Brainstormr ? <span class="text-blue-400 cursor-pointer ms-2"
+                        onclick="showSignup()">
                         Join now</span></p>
             </div>
             <!-- signup -->
@@ -76,7 +81,8 @@
                 </div>
             </div>
             <div class="dark:text-white sm:mt-7 hidden" id="signupId-section">
-                <p class="flex justify-center">Have an account ? <span class="text-blue-400 cursor-pointer ms-2" onclick="showSignin()">
+                <p class="flex justify-center">Have an account ? <span class="text-blue-400 cursor-pointer ms-2"
+                        onclick="showSignin()">
                         Log in</span></p>
             </div>
         </div>
