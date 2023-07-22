@@ -15,10 +15,10 @@
 
 <body class="bg-slate-50 dark:bg-slate-800 font-sans" style="height: 4000px;">
     <div class="flex flex-col md:flex-row min-h-screen">
-        <div class="order-last md:order-first w-full md:w-1/6 border-r-2 dark:border-gray-500 relative">
-            <div class="flex flex-row md:flex-col h-full justify-between mx-6 md:mx-5 py-36">
+        <div class="order-last md:order-first w-full md:w-1/6  md:border-r-2 dark:border-gray-500 relative">
+            <div class="flex flex-row md:flex-col h-full justify-between mx-6 md:mx-5 py-36 ">
                 <div class="absolute top-6">
-                    <h1 class="dark:text-white font-bold lg:text-4xl hidden lg:inline ">brainstormr</h1>
+                    <h1 class="dark:text-white font-bold lg:text-4xl hidden lg:inline ">TalkSphere</h1>
                     <img src="img/logo.ico" alt="" srcset="" class="w-28 dark:invert hidden md:inline lg:hidden">
                 </div>
                 <div>
@@ -71,7 +71,8 @@
                         class="rounded-2xl hover:bg-gray-200 transition duration-300 ease-in-out dark:hover:bg-gray-700">
                         <div class="flex items-center md:p-3">
                             <i class="fa-solid fa-user fa-lg dark:text-white"></i>
-                            <span class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Profile</span>
+                            <a href="./profile.html"><span
+                                    class="ml-4 hidden md:hidden lg:inline dark:text-white font-semibold">Profile</span></a>
                         </div>
                     </div>
                 </div>
@@ -95,8 +96,8 @@
             </div>
         </div>
         <!-- div2 -->
-        <div class="font-Roboto w-full md:w-1/2 border-r-2 dark:border-gray-500 mt-6 ml-5">
-            <div class="flex gap-3">
+        <div class="font-Roboto w-full md:w-1/2 border-r-2 dark:border-gray-500 mt-6 mx-5">
+            <div class="flex gap-3 flex-wrap">
                 <div class="relative inline-block text-left">
                     <div>
                         <button type="button"
@@ -156,8 +157,61 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mt-10 dark:text-white">
+                <div class="border rounded-lg shadow-md mr-5">
+                    <div class="m-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="img/profileimage.png" alt="profile" class="w-10 rounded-full cursor-pointer">
+                                <h6 class="ml-3 font-semibold cursor-pointer">John_3589</h6>
+                            </div>
+                            <div>
+                                <button
+                                    class="bg-gray-900 hover:bg-gray-700 text-white font-medium py-1.5 px-4 rounded-full dark:bg-blue-700 dark:hover:bg-blue-500">
+                                    Follow
+                                </button>
+                                <!-- <img src="img/share.png" alt="Share" class="w-4 dark:invert"> -->
+                            </div>
+                        </div>
+                        <div class="my-5">
+                            <div>
+                                <h1 class="font-sans text-3xl font-semibold">Online Tutoring</h1>
+                            </div>
+                            <hr class="my-2">
+                            <div>
+                                <p>
+                                    With the rise of online learning, there is a growing demand for online tutors. If
+                                    you have a strong knowledge of a particular subject, you can start an online
+                                    tutoring business. You can market your services through online platforms such as
+                                    Upwork, Fiverr, and TutorMe.. <span class="text-gray-400 cursor-pointer">more</span>
+                                </p>
+                            </div>
+                            <div class="my-3">
+                                <div
+                                    class="hashtag">
+                                    <p class="text-sm">#onlinetutoring</p>
+                                </div>
+                                <div
+                                    class="hashtag">
+                                    <p class="text-sm">#tutoring</p>
+                                </div>
+                                <div
+                                    class="hashtag">
+                                    <p class="text-sm">#homeschooling</p>
+                                </div>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hidden md:block w-full md:w-1/3 ">3</div>
+        <div class="hidden md:block w-full md:w-1/3 ">3
+            <h1>content</h1>
+        </div>
     </div>
 
     <script src="script.js"></script>
